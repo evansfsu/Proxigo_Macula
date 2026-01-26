@@ -1,0 +1,16 @@
+{
+  "name": "uav-gps-denied-orin",
+  "build": {
+    "dockerfile": "orin.Dockerfile",
+    "context": ".."
+  },
+  "workspaceFolder": "/work",
+  "mounts": [
+    "source=${localWorkspaceFolder},target=/work,type=bind"
+  ],
+  "runArgs": [
+    "--net=host",
+    "--privileged"
+  ],
+  "postCreateCommand": "bash -lc 'cd /work/ros2_ws && rosdep init || true && rosdep update && rosdep install --from-paths src -y --ignore-src || true'"
+}
