@@ -1,0 +1,26 @@
+# ROS2 / colcon
+**/build/
+**/install/
+**/log/
+**/.colcon*
+**/.ros/
+
+# PX4 build artifacts
+**/PX4-Autopilot/build/
+**/PX4-Autopilot/log/
+**/PX4-Autopilot/.venv/
+**/PX4-Autopilot/.px4/
+
+# Python
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+.venv/
+
+# VS Code / IDE
+.vscode/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
