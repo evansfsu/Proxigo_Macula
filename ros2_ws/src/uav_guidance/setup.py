@@ -1,5 +1,4 @@
 from setuptools import setup
-import os
 
 package_name = "uav_guidance"
 
@@ -13,12 +12,10 @@ setup(
     ],
     install_requires=["setuptools"],
     zip_safe=True,
-    scripts=[
-        "scripts/offboard_controller.py"
-    ],
     entry_points={
         "console_scripts": [
             "offboard_hello = uav_guidance.offboard_hello:main",
+            "offboard_controller = uav_guidance.offboard_controller:main",
         ],
     },
 )
