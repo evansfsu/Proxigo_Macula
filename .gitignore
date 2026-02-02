@@ -20,7 +20,12 @@
 # VS Code / IDE
 .vscode/
 *.code-workspace
-
+.idea/
 # OS
 .DS_Store
 Thumbs.db
+
+# Px4
+**/log/
+**/px4.log
+**/*.ulg
