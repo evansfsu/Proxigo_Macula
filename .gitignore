@@ -1,31 +1,21 @@
-# ROS2 / colcon
-**/build/
-**/install/
-**/log/
-**/.colcon*
-**/.ros/
+# colcon / ROS2
+ros2_ws/build/
+ros2_ws/install/
+ros2_ws/log/
 
-# PX4 build artifacts
+# PX4 build products/logs inside the submodule (or if you accidentally have it non-submodule)
 **/PX4-Autopilot/build/
 **/PX4-Autopilot/log/
-**/PX4-Autopilot/.venv/
-**/PX4-Autopilot/.px4/
+**/PX4-Autopilot/*.ulg
+**/PX4-Autopilot/px4.log
+**/PX4-Autopilot/parameters*.bson
+**/PX4-Autopilot/dataman
 
-# Python
+# Python cache
 **/__pycache__/
 **/*.pyc
-**/*.pyo
-.venv/
 
-# VS Code / IDE
+# Editor / OS noise
 .vscode/
-*.code-workspace
-.idea/
-# OS
 .DS_Store
-Thumbs.db
 
-# Px4
-**/log/
-**/px4.log
-**/*.ulg
